@@ -14,10 +14,3 @@
 
 ***
 
-### To be added to docker hub
-
-* samuelololol/ubuntu-kafka
-[![](https://imagelayers.io/badge/samuelololol/ubuntu-kafka:latest.svg)](https://imagelayers.io/?images=samuelololol/ubuntu-kafka:latest 'samuelololol/ubuntu-kafka')
-* samuelololol/ubuntu-zookeeper
-[![](https://imagelayers.io/badge/samuelololol/ubuntu-zookeeper:latest.svg)](https://imagelayers.io/?images=samuelololol/ubuntu-zookeeper:latest 'samuelololol/ubuntu-zookeeper')
-

@@ -1,4 +1,0 @@
-zookeeper:
-    image: samuelololol/zookeeper
-    #build: .
-
