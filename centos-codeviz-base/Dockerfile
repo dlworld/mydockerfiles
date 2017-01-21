@@ -3,7 +3,7 @@ MAINTAINER dlworld <denglinwen@gmail.com>
 COPY install_gcc-4.6.2.sh /root/
 RUN yum update -y && \
     yum install -y ftp wget git which make graphviz gcc g++ patch
-RUN cd /root/ && 
+RUN cd /root/ && \
     ftp://ftp.gnu.org/pub/gnu/gcc/gcc-4.6.2/gcc-4.6.2.tar.gz \
     wget ftp://gcc.gnu.org/pub/gcc/infrastructure/mpfr-2.4.2.tar.bz2 && \
     cd gcc-4.6.2 && \
