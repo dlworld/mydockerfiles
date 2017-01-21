@@ -1,0 +1,6 @@
+codeviz:
+    image: daocloud.io/dlworld/centos-codeviz
+    volumes:
+        - .:/app
+    working_dir: /app
+    command: /app/codeviz-make.sh
