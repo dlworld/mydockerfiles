@@ -21,4 +21,6 @@ RUN cd /usr/include && ln -s x86_64-linux-gnu/* .; \
     cd /root/codeviz/ && ./configure && make && make install && \
     rm -rf /root/codeviz && \
     yum clean all
-
+RUN yum update -y && \
+    yum install -y glib2-devel zlib-devel autoconf automake libtool ncurses-devel && \
+    yum clean all
