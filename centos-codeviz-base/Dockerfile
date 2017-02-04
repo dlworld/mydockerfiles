@@ -2,10 +2,10 @@ FROM centos:7
 MAINTAINER dlworld <denglinwen@gmail.com>
 COPY install_gcc-4.6.2.sh /root/
 RUN yum update -y && \
-    yum install -y ftp wget git which make graphviz gcc g++ patch
+    yum install -y ftp wget bzip2 git which make graphviz gcc g++ patch perl-DB_File
 RUN cd /root/ && wget ftp://ftp.gnu.org/pub/gnu/gcc/gcc-4.6.2/gcc-4.6.2.tar.bz2 && \
-    md5sum gcc-4.6.2.tar.bz2 && tar xvf gcc-4.6.2.tar.bz2 && rm gcc-4.6.2.tar.bz2 && \
-    echo "download gcc finished" ; \
+    md5sum gcc-4.6.2.tar.bz2 && tar xvf gcc-4.6.2.tar.bz2 && rm -rf gcc-4.6.2.tar.bz2 && \
+    echo "Download gcc finished" && \
     cd gcc-4.6.2 && wget ftp://gcc.gnu.org/pub/gcc/infrastructure/mpfr-2.4.2.tar.bz2 ; \
     tar xvf mpfr-2.4.2.tar.bz2 && ln -sf mpfr-2.4.2 mpfr && rm -rf mpfr-2.4.2.tar.bz2 ; \
     wget ftp://gcc.gnu.org/pub/gcc/infrastructure/gmp-4.3.2.tar.bz2 ; \
